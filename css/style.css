@@ -1,12 +1,12 @@
 body {
-    background: #44baa8;
+    background:pink ;
   }
   
   .text {
     position: absolute;
     left: 50%;
     top: 50%;
-    color: yellow;
+    color: #C4FAB8;
     font-size: 300px;
     filter: url(#gooey);
   }
