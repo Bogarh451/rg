@@ -1,0 +1,108 @@
+body {
+    background: #44baa8;
+  }
+  
+  .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: yellow;
+    font-size: 300px;
+    filter: url(#gooey);
+  }
+  .text::before, .text::after {
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    filter: blur(9px);
+  }
+  .text::before {
+    content: "ragazze";
+    animation-name: items-odd;
+  }
+  .text::after {
+    content: "bazaar";
+    animation-name: items-even;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes items-odd {
+    16.6666666667% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    41.6666666667% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    66.6666666667% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    91.6666666667% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+    0% {
+      content: "COMPRA";
+    }
+    49.9999% {
+      content: "COMPRA";
+    }
+    50% {
+      content: "ragazze";
+    }
+    99.9999% {
+      content: "ragazze";
+    }
+  }
+  @keyframes items-even {
+    16.6666666667% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    41.6666666667% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    66.6666666667% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    91.6666666667% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+    0% {
+      content: "en";
+    }
+    49.9999% {
+      content: "en";
+    }
+    50% {
+      content: "bazaar";
+    }
+    99.9999% {
+      content: "bazaar";
+    }
+  }
+  
